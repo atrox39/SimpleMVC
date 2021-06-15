@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SimpleMVC.Controler;
 
 namespace SimpleMVC
 {
-    public partial class Form1 : Form
+    public partial class FrmMain : Form
     {
-        public Form1()
+        public FrmMain()
         {
             InitializeComponent();
+            Test test_controller = new Test();
+            test_controller.Insert("Carlos Eduardo", "Ortega Frias", 23);
         }
     }
 }
